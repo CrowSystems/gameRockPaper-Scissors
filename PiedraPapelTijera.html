@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algoritmo Piedra, Papel o tijera</title>
     <script>
+        function aleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
         //OBTENIENDO LA ELECCIÓN DEL JUGADOR
         let eleccionDelJugador = 0;
         eleccionDelJugador = prompt("Elige: 1 para 🥌, 2 para 📄, 3 para ✂️");
@@ -25,7 +28,7 @@
         }
 
         //OBTENIENDO LA ELECCIONDEL COMPUTADOR
-        let eleeccionComputador = 1;
+        let eleeccionComputador = aleatorio(1,3);
         if(eleeccionComputador == 1){
             alert("La computadora eligió 🥌");
         }
