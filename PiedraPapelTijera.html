@@ -6,9 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algoritmo Piedra, Papel o tijera</title>
     <script>
-        //OBTENIENDO LA ELECCION DEL JUGADOR
+        //OBTENIENDO LA ELECCIÓN DEL JUGADOR
         let eleccionDelJugador = 0;
-        
+        eleccionDelJugador = prompt("Elige: 1 para 🥌, 2 para 📄, 3 para ✂️");
+
+        //INFORMANDO LA ELECCIÓN DEL JUGADOR
+        if(eleccionDelJugador == 1) {
+            alert("Elegiste 🥌");
+        }
+        else if(eleccionDelJugador == 2) {
+            alert("Elegiste 📄")
+        }
+        else if(eleccionDelJugador == 3){
+            alert("Elegiste ✂️")
+        }
+        else {
+            alert("Elegiste otra cosa, así no puedes jugar")
+        }
+
+        //OBTENIENDO LA ELECCIONDEL COMPUTADOR
+        let eleeccionComputador = 1;
+        if(eleeccionComputador == 1){
+            alert("La computadora eligió 🥌");
+        }
+        else if(eleeccionComputador == 2)
+        {
+            alert("La computadora eligió 📄")
+        }
+        else if(eleeccionComputador == 3)
+        {
+            alert("La computadora eligió ✂️")
+        }
+        else {
+            alert("Cometí un error programando la elección del computador!!!")
+        }
+
+        //DECIDIENDO EL GANADOR
+        if(eleccionDelJugador == eleeccionComputador){
+            alert("¡EMPATE! 🤼")
+        }
+        else if(eleccionDelJugador == 1 && eleeccionComputador == 3) {
+            alert("¡GANASTE! 🥳")
+        }
+        else if(eleccionDelJugador == 2 && eleeccionComputador == 1) { 
+            alert("¡GANASTE! 🥳")
+        }
+        else if(eleccionDelJugador == 3 && eleeccionComputador == 2) {
+            alert("¡GANASTE! 🥳")
+        }
+        else {
+            alert("PERDISTE .... 😢")
+        }
+
     </script>
 </head>
 <body>
